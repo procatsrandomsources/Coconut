@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <link rel="icon" href="/icoicon.png" type="image/png">
+    <link rel="icon" href="icoicon.png" type="image/png">
     <title>CoconutSMP | Official Minecraft Server (1.7+ & Cracked)</title>
     
     <!-- Tailwind CSS -->
@@ -48,39 +48,45 @@
         .bg-checkered {
             background-color: #07080a;
             background-image: 
-                radial-gradient(circle at 50% 0%, rgba(255, 85, 0, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 50% 0%, rgba(255, 85, 0, 0.12) 0%, transparent 60%),
                 linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
             background-size: 100% 100%, 40px 40px, 40px 40px;
         }
 
         .glass-panel {
-            background: rgba(15, 17, 21, 0.75);
+            background: rgba(15, 17, 21, 0.82);
             backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .glass-panel:hover {
-            border-color: rgba(255, 85, 0, 0.4);
-            box-shadow: 0 10px 30px -10px rgba(255, 85, 0, 0.2);
+            border-color: rgba(255, 85, 0, 0.5);
+            box-shadow: 0 15px 35px -10px rgba(255, 85, 0, 0.25);
         }
 
         @keyframes float {
             0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-10px) rotate(2deg); }
+            50% { transform: translateY(-12px) rotate(3deg); }
         }
 
         .animate-float {
-            animation: float 6s ease-in-out infinite;
+            animation: float 5s ease-in-out infinite;
         }
 
         @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 25px rgba(255, 85, 0, 0.25); }
-            50% { box-shadow: 0 0 45px rgba(255, 85, 0, 0.5); }
+            0%, 100% { box-shadow: 0 0 25px rgba(255, 85, 0, 0.3); }
+            50% { box-shadow: 0 0 50px rgba(255, 85, 0, 0.6); }
         }
 
         .glow-accent {
             animation: pulse-glow 3s infinite ease-in-out;
+        }
+
+        /* Pixel art rendering for icons */
+        .pixelated {
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
         }
 
         /* Custom scrollbar */
@@ -111,18 +117,18 @@
     </div>
 
     <!-- Header / Navigation -->
-    <header class="sticky top-0 z-40 bg-coco-dark/80 backdrop-blur-xl border-b border-coco-border transition-all">
+    <header class="sticky top-0 z-40 bg-coco-dark/85 backdrop-blur-xl border-b border-coco-border transition-all">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Brand Logo -->
             <a href="#" class="flex items-center space-x-3 group" onclick="playClickSound()">
                 <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-coco-accent to-coco-gold p-0.5 shadow-xl group-hover:scale-105 transition-transform duration-300">
                     <div class="w-full h-full bg-coco-dark rounded-[14px] flex items-center justify-center overflow-hidden">
-                        <img src="coconut.png" alt="CoconutSMP Icon" class="w-7 h-7 object-contain group-hover:rotate-12 transition-transform" onerror="this.onerror=null; this.src='https://placehold.co/40x40/ff5500/ffffff?text=C';">
+                        <img src="icoicon.png" alt="CoconutSMP Icon" class="w-8 h-8 object-contain pixelated group-hover:rotate-12 transition-transform" onerror="this.onerror=null; this.src='coconut.png';">
                     </div>
                 </div>
                 <div>
                     <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-gray-200 to-coco-accent bg-clip-text text-transparent">COCONUT<span class="text-coco-accent">SMP</span></span>
-                    <span class="block text-[10px] font-mono tracking-widest text-gray-400 font-semibold uppercase">1.7+ & Cracked Support</span>
+                    <span class="block text-[10px] font-mono tracking-widest text-gray-400 font-semibold uppercase">1.7+ to Newest Version</span>
                 </div>
             </a>
 
@@ -152,7 +158,7 @@
 
             <!-- Discord & Quick IP Copy -->
             <div class="hidden md:flex items-center space-x-3">
-                <a href="https://discord.gg" target="_blank" onclick="playClickSound()" class="flex items-center space-x-2 bg-coco-discord/20 hover:bg-coco-discord text-white px-4 py-2.5 rounded-xl border border-coco-discord/40 transition-all font-mono text-xs font-bold shadow-lg">
+                <a href="https://discord.gg/8azdbUDQ4N" target="_blank" onclick="playClickSound()" class="flex items-center space-x-2 bg-coco-discord/20 hover:bg-coco-discord text-white px-4 py-2.5 rounded-xl border border-coco-discord/40 transition-all font-mono text-xs font-bold shadow-lg">
                     <i class="fa-brands fa-discord text-base"></i>
                     <span>Discord</span>
                 </a>
@@ -180,7 +186,7 @@
             <div class="flex items-center justify-between pb-6 border-b border-coco-border">
                 <div class="flex items-center space-x-3">
                     <div class="w-10 h-10 rounded-xl bg-coco-accent flex items-center justify-center text-white overflow-hidden p-1">
-                        <img src="icoicon.png" alt="CoconutSMP" class="w-full h-full object-contain">
+                        <img src="icoicon.png" alt="CoconutSMP" class="w-full h-full object-contain pixelated" onerror="this.onerror=null; this.src='coconut.png';">
                     </div>
                     <span class="font-bold text-lg tracking-wide">CoconutSMP</span>
                 </div>
@@ -207,7 +213,7 @@
             </nav>
         </div>
         <div class="pt-6 border-t border-coco-border space-y-3">
-            <a href="https://discord.gg" target="_blank" class="w-full bg-coco-discord hover:bg-opacity-90 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2 shadow-lg text-sm">
+            <a href="https://discord.gg/8azdbUDQ4N" target="_blank" class="w-full bg-coco-discord hover:bg-opacity-90 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2 shadow-lg text-sm">
                 <i class="fa-brands fa-discord text-lg"></i>
                 <span>Join Official Discord</span>
             </a>
@@ -225,8 +231,8 @@
             
             <!-- Floating Coconut Illustration Badge -->
             <div class="mb-8 flex justify-center">
-                <div class="relative w-24 h-24 md:w-28 md:h-28 rounded-3xl glass-panel p-2 glow-accent animate-float flex items-center justify-center shadow-2xl">
-                    <img src="icoicon.png" alt="CoconutSMP Logo" class="w-full h-full object-contain drop-shadow-[0_10px_15px_rgba(255,85,0,0.3)]" onerror="this.onerror=null; this.src='https://placehold.co/120x120/ff5500/ffffff?text=Coconut';">
+                <div class="relative w-28 h-28 md:w-32 md:h-32 rounded-3xl glass-panel p-2.5 glow-accent animate-float flex items-center justify-center shadow-2xl">
+                    <img src="icoicon.png" alt="CoconutSMP Logo" class="w-full h-full object-contain pixelated drop-shadow-[0_12px_20px_rgba(255,85,0,0.4)]" onerror="this.onerror=null; this.src='coconut.png';">
                     <div class="absolute -bottom-2 -right-2 w-8 h-8 rounded-xl bg-coco-green flex items-center justify-center text-white text-xs shadow-lg border-2 border-coco-dark">
                         <i class="fa-solid fa-check"></i>
                     </div>
@@ -236,7 +242,7 @@
             <!-- Version Badge -->
             <div class="inline-flex items-center space-x-2 glass-panel rounded-full px-5 py-2 mb-8 shadow-xl">
                 <span class="flex h-2.5 w-2.5 rounded-full bg-coco-green animate-pulse"></span>
-                <span class="text-xs font-mono font-bold text-gray-200 uppercase tracking-widest">VERSION 1.7+ & CRACKED COMPATIBLE</span>
+                <span class="text-xs font-mono font-bold text-gray-200 uppercase tracking-widest">VERSION 1.7+ TO NEWEST VERSION & CRACKED COMPATIBLE</span>
             </div>
 
             <!-- Main Heading -->
@@ -257,7 +263,7 @@
                     <span>COPY JAVA IP (play.coconutsmp.qzz.io)</span>
                 </button>
 
-                <a href="https://discord.gg" target="_blank" onclick="playClickSound()" class="w-full sm:w-auto bg-coco-discord hover:bg-opacity-90 text-white font-bold px-8 py-4 rounded-2xl transition-all flex items-center justify-center space-x-3 text-sm shadow-xl hover:-translate-y-1">
+                <a href="https://discord.gg/8azdbUDQ4N" target="_blank" onclick="playClickSound()" class="w-full sm:w-auto bg-coco-discord hover:bg-opacity-90 text-white font-bold px-8 py-4 rounded-2xl transition-all flex items-center justify-center space-x-3 text-sm shadow-xl hover:-translate-y-1">
                     <i class="fa-brands fa-discord text-xl"></i>
                     <span>JOIN DISCORD</span>
                 </a>
@@ -267,7 +273,7 @@
             <div class="mt-16 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
                 <div class="glass-panel rounded-2xl p-5 text-center shadow-xl hover:border-coco-accent/50 transition-all">
                     <div class="text-xs font-mono text-gray-400 mb-1">JAVA PORT</div>
-                    <div class="text-xl font-extrabold text-white font-mono">25565 <span class="text-[10px] text-coco-accent">(DEFAULT)</span></div>
+                    <div class="text-xl font-extrabold text-white font-mono">25566 <span class="text-[10px] text-coco-accent">(CUSTOM)</span></div>
                 </div>
                 <div class="glass-panel rounded-2xl p-5 text-center shadow-xl hover:border-coco-accent/50 transition-all">
                     <div class="text-xs font-mono text-gray-400 mb-1">BEDROCK PORT</div>
@@ -292,7 +298,7 @@
                             <span>LIVE MAP SERVER</span>
                         </div>
                         <h2 class="text-3xl sm:text-4xl font-black text-white">REAL-TIME MAP VIEWER</h2>
-                        <p class="text-gray-400 text-sm mt-1">Explore biomes, landmarks, and terrain layout directly in your web browser.</p>
+                        <p class="text-gray-400 text-sm mt-1">Explore biomes, landmarks, and terrain layout directly in your web browser in 2D or 3D.</p>
                     </div>
                     
                     <!-- Map Quick Actions -->
@@ -500,7 +506,7 @@
                             <ol class="space-y-4 text-xs text-gray-300">
                                 <li class="flex items-start space-x-3">
                                     <span class="font-mono font-bold text-coco-discord bg-coco-dark px-2 py-1 rounded border border-coco-border text-[10px]">Step 1</span>
-                                    <span>Join our official Discord server (<a href="https://discord.gg" target="_blank" class="text-coco-discord underline font-bold">discord.gg</a>).</span>
+                                    <span>Join our official Discord server (<a href="https://discord.gg/8azdbUDQ4N" target="_blank" class="text-coco-discord underline font-bold">discord.gg/8azdbUDQ4N</a>).</span>
                                 </li>
                                 <li class="flex items-start space-x-3">
                                     <span class="font-mono font-bold text-coco-discord bg-coco-dark px-2 py-1 rounded border border-coco-border text-[10px]">Step 2</span>
@@ -520,7 +526,7 @@
                         </div>
 
                         <div class="mt-8 pt-4 border-t border-coco-border">
-                            <a href="https://discord.gg" target="_blank" onclick="playClickSound()" class="w-full bg-coco-discord hover:bg-opacity-90 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center space-x-2 text-xs font-mono shadow-xl">
+                            <a href="https://discord.gg/8azdbUDQ4N" target="_blank" onclick="playClickSound()" class="w-full bg-coco-discord hover:bg-opacity-90 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center space-x-2 text-xs font-mono shadow-xl">
                                 <i class="fa-brands fa-discord text-base"></i>
                                 <span>JOIN OFFICIAL DISCORD</span>
                             </a>
@@ -558,7 +564,7 @@
                         </div>
 
                         <div class="mt-8 pt-4 border-t border-coco-border">
-                            <a href="https://discord.com/channels/1475694206461677632/1507180436730679428" target="_blank" onclick="playClickSound()" class="w-full bg-coco-discord hover:bg-opacity-90 border border-coco-discord text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center space-x-2 text-xs font-mono shadow-xl">
+                            <a href="https://discord.gg/8azdbUDQ4N" target="_blank" onclick="playClickSound()" class="w-full bg-coco-discord hover:bg-opacity-90 border border-coco-discord text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center space-x-2 text-xs font-mono shadow-xl">
                                 <i class="fa-brands fa-discord text-base"></i>
                                 <span>Join Lobby VC in Discord</span>
                             </a>
@@ -576,7 +582,7 @@
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
             <div class="flex items-center space-x-3">
                 <div class="w-9 h-9 rounded-xl bg-coco-accent/20 flex items-center justify-center text-coco-accent p-1">
-                    <img src="coconut.png" alt="Icon" class="w-full h-full object-contain">
+                    <img src="coconut.png" alt="Icon" class="w-full h-full object-contain pixelated" onerror="this.onerror=null; this.src='icoicon.png';">
                 </div>
                 <div class="text-left">
                     <span class="font-extrabold text-white text-sm tracking-wide">COCONUT<span class="text-coco-accent">SMP</span></span>
@@ -587,7 +593,7 @@
                 <a href="#hero" class="hover:text-coco-accent transition-colors">Home</a>
                 <a href="#map" class="hover:text-coco-accent transition-colors">Map</a>
                 <a href="#tutorials" class="hover:text-coco-accent transition-colors">Guides</a>
-                <a href="https://discord.gg" target="_blank" class="hover:text-coco-accent transition-colors">Discord</a>
+                <a href="https://discord.gg/8azdbUDQ4N" target="_blank" class="hover:text-coco-accent transition-colors">Discord</a>
             </div>
         </div>
     </footer>
