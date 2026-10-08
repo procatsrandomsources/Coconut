@@ -333,13 +333,12 @@
     <link rel="dns-prefetch" href="https://discord.gg">
     <link rel="dns-prefetch" href="https://www.highrevenueformat.com">
 
-    <!-- Adstera Ad Scripts -->
+    <!-- Ad CSS -->
     <style>
-        .ad-container {
-            display: block !important;
+        .ad-hidden {
+            display: none !important;
         }
     </style>
-
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -565,9 +564,9 @@
     <main class="z-10 flex-grow">
 
         <!-- Side Ad Placement (Left) -->
-        <div id="side-ad-left" class="hidden lg:block fixed left-4 top-1/2 -translate-y-1/2 z-20">
-            <div id="adstera-sidebar-left" class="w-[160px] h-[600px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
-                <div id="container-2555f80ba0a5646bf2793d3d295e0224" class="ad-container"></div>
+        <div id="side-ad-left" class="ad-hidden hidden lg:block fixed left-4 top-1/2 -translate-y-1/2 z-20">
+            <div class="w-[160px] h-[600px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                <div id="container-2555f80ba0a5646bf2793d3d295e0224"></div>
                 <script>
                     atOptions = {
                         'key': '2555f80ba0a5646bf2793d3d295e0224',
@@ -582,9 +581,9 @@
         </div>
 
         <!-- Side Ad Placement (Right) -->
-        <div id="side-ad-right" class="hidden lg:block fixed right-4 top-1/2 -translate-y-1/2 z-20">
-            <div id="adstera-sidebar-right" class="w-[160px] h-[300px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
-                <div id="container-d961918bd38e27b78a9906a2db420a6a" class="ad-container"></div>
+        <div id="side-ad-right" class="ad-hidden hidden lg:block fixed right-4 top-1/2 -translate-y-1/2 z-20">
+            <div class="w-[160px] h-[300px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                <div id="container-d961918bd38e27b78a9906a2db420a6a"></div>
                 <script>
                     atOptions = {
                         'key': 'd961918bd38e27b78a9906a2db420a6a',
@@ -602,9 +601,9 @@
         <section id="hero" class="relative pt-16 pb-16 md:pt-24 md:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
 
             <!-- Header Ad Placement -->
-            <div id="header-ad" class="hidden md:block mb-8">
-                <div id="adstera-header" class="w-[728px] h-[90px] mx-auto bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
-                    <div id="container-64dd92061b3bf0a05b56b900657100cf" class="ad-container"></div>
+            <div id="header-ad" class="ad-hidden hidden md:block mb-8">
+                <div class="w-[728px] h-[90px] mx-auto bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                    <div id="container-64dd92061b3bf0a05b56b900657100cf"></div>
                     <script>
                         atOptions = {
                             'key': '64dd92061b3bf0a05b56b900657100cf',
@@ -1919,42 +1918,19 @@
                         </div>
                     </div>
                     <label class="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" id="ad-toggle" class="sr-only peer" checked onchange="toggleAds()">
+                        <input type="checkbox" id="ad-toggle" class="sr-only peer" onchange="toggleAds()">
                         <div class="w-14 h-8 bg-coco-border peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-coco-accent"></div>
                     </label>
                 </div>
             </div>
 
-            <!-- Ad Container (Hidden by default) -->
-            <div id="ad-container" class="hidden space-y-8">
-                <div class="text-center text-gray-400 text-xs font-mono mb-4">
-                    <i class="fa-solid fa-info-circle mr-2"></i>
-                    Advertisements help support server costs. No pop-up or redirect ads.
-                </div>
-
-                <!-- Banner Ad Placement (468x60) -->
-                <div class="glass-panel p-4 rounded-2xl border border-coco-border">
-                    <div class="text-xs text-gray-500 font-mono mb-2 text-center">BANNER AD (468x60)</div>
-                    <div id="adstera-banner" class="min-h-[60px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden flex justify-center">
-                        <div id="container-7a2558d5f33fe756075ec9091c5e2df3" class="ad-container"></div>
-                        <script>
-                            atOptions = {
-                                'key': '7a2558d5f33fe756075ec9091c5e2df3',
-                                'format': 'iframe',
-                                'height': 60,
-                                'width': 468,
-                                'params': {}
-                            };
-                        </script>
-                        <script async="async" data-cfasync="false" src="https://www.highrevenueformat.com/7a2558d5f33fe756075ec9091c5e2df3/invoke.js"></script>
-                    </div>
-                </div>
-
-                <!-- Image Ad Placement (300x250) -->
-                <div class="glass-panel p-4 rounded-2xl border border-coco-border">
-                    <div class="text-xs text-gray-500 font-mono mb-2 text-center">IMAGE AD (300x250)</div>
-                    <div id="adstera-image" class="min-h-[250px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden flex justify-center">
-                        <div id="container-3ed2937558fa9e343798f48f38b60de3" class="ad-container"></div>
+            <!-- Additional Ads Grid -->
+            <div id="ad-grid" class="ad-hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Ad 4 -->
+                <div class="glass-panel p-5 rounded-2xl border border-coco-border">
+                    <div class="text-gray-400 text-xs font-mono mb-3 text-center">ADVERTISEMENT</div>
+                    <div class="h-[250px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                        <div id="container-3ed2937558fa9e343798f48f38b60de3"></div>
                         <script>
                             atOptions = {
                                 'key': '3ed2937558fa9e343798f48f38b60de3',
@@ -1968,21 +1944,147 @@
                     </div>
                 </div>
 
-                <!-- Mobile Banner Ad Placement (320x50) -->
-                <div class="glass-panel p-4 rounded-2xl border border-coco-border">
-                    <div class="text-xs text-gray-500 font-mono mb-2 text-center">MOBILE BANNER AD (320x50)</div>
-                    <div id="adstera-mobile" class="min-h-[50px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden flex justify-center">
-                        <div id="container-78db784d41ab470075e6cebb5df9fdb2" class="ad-container"></div>
+                <!-- Ad 5 -->
+                <div class="glass-panel p-5 rounded-2xl border border-coco-border">
+                    <div class="text-gray-400 text-xs font-mono mb-3 text-center">ADVERTISEMENT</div>
+                    <div class="h-[250px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                        <div id="container-3ed2937558fa9e343798f48f38b60de3-2"></div>
                         <script>
                             atOptions = {
-                                'key': '78db784d41ab470075e6cebb5df9fdb2',
+                                'key': '3ed2937558fa9e343798f48f38b60de3',
                                 'format': 'iframe',
-                                'height': 50,
-                                'width': 320,
+                                'height': 250,
+                                'width': 300,
                                 'params': {}
                             };
                         </script>
-                        <script async="async" data-cfasync="false" src="https://www.highrevenueformat.com/78db784d41ab470075e6cebb5df9fdb2/invoke.js"></script>
+                        <script async="async" data-cfasync="false" src="https://www.highrevenueformat.com/3ed2937558fa9e343798f48f38b60de3/invoke.js"></script>
+                    </div>
+                </div>
+
+                <!-- Ad 6 -->
+                <div class="glass-panel p-5 rounded-2xl border border-coco-border">
+                    <div class="text-gray-400 text-xs font-mono mb-3 text-center">ADVERTISEMENT</div>
+                    <div class="h-[250px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                        <div id="container-3ed2937558fa9e343798f48f38b60de3-3"></div>
+                        <script>
+                            atOptions = {
+                                'key': '3ed2937558fa9e343798f48f38b60de3',
+                                'format': 'iframe',
+                                'height': 250,
+                                'width': 300,
+                                'params': {}
+                            };
+                        </script>
+                        <script async="async" data-cfasync="false" src="https://www.highrevenueformat.com/3ed2937558fa9e343798f48f38b60de3/invoke.js"></script>
+                    </div>
+                </div>
+
+                <!-- Ad 7 -->
+                <div class="glass-panel p-5 rounded-2xl border border-coco-border">
+                    <div class="text-gray-400 text-xs font-mono mb-3 text-center">ADVERTISEMENT</div>
+                    <div class="h-[250px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                        <div id="container-3ed2937558fa9e343798f48f38b60de3-4"></div>
+                        <script>
+                            atOptions = {
+                                'key': '3ed2937558fa9e343798f48f38b60de3',
+                                'format': 'iframe',
+                                'height': 250,
+                                'width': 300,
+                                'params': {}
+                            };
+                        </script>
+                        <script async="async" data-cfasync="false" src="https://www.highrevenueformat.com/3ed2937558fa9e343798f48f38b60de3/invoke.js"></script>
+                    </div>
+                </div>
+
+                <!-- Ad 8 -->
+                <div class="glass-panel p-5 rounded-2xl border border-coco-border">
+                    <div class="text-gray-400 text-xs font-mono mb-3 text-center">ADVERTISEMENT</div>
+                    <div class="h-[250px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                        <div id="container-3ed2937558fa9e343798f48f38b60de3-5"></div>
+                        <script>
+                            atOptions = {
+                                'key': '3ed2937558fa9e343798f48f38b60de3',
+                                'format': 'iframe',
+                                'height': 250,
+                                'width': 300,
+                                'params': {}
+                            };
+                        </script>
+                        <script async="async" data-cfasync="false" src="https://www.highrevenueformat.com/3ed2937558fa9e343798f48f38b60de3/invoke.js"></script>
+                    </div>
+                </div>
+
+                <!-- Ad 9 -->
+                <div class="glass-panel p-5 rounded-2xl border border-coco-border">
+                    <div class="text-gray-400 text-xs font-mono mb-3 text-center">ADVERTISEMENT</div>
+                    <div class="h-[250px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                        <div id="container-3ed2937558fa9e343798f48f38b60de3-6"></div>
+                        <script>
+                            atOptions = {
+                                'key': '3ed2937558fa9e343798f48f38b60de3',
+                                'format': 'iframe',
+                                'height': 250,
+                                'width': 300,
+                                'params': {}
+                            };
+                        </script>
+                        <script async="async" data-cfasync="false" src="https://www.highrevenueformat.com/3ed2937558fa9e343798f48f38b60de3/invoke.js"></script>
+                    </div>
+                </div>
+
+                <!-- Ad 10 -->
+                <div class="glass-panel p-5 rounded-2xl border border-coco-border">
+                    <div class="text-gray-400 text-xs font-mono mb-3 text-center">ADVERTISEMENT</div>
+                    <div class="h-[250px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                        <div id="container-3ed2937558fa9e343798f48f38b60de3-7"></div>
+                        <script>
+                            atOptions = {
+                                'key': '3ed2937558fa9e343798f48f38b60de3',
+                                'format': 'iframe',
+                                'height': 250,
+                                'width': 300,
+                                'params': {}
+                            };
+                        </script>
+                        <script async="async" data-cfasync="false" src="https://www.highrevenueformat.com/3ed2937558fa9e343798f48f38b60de3/invoke.js"></script>
+                    </div>
+                </div>
+
+                <!-- Ad 11 -->
+                <div class="glass-panel p-5 rounded-2xl border border-coco-border">
+                    <div class="text-gray-400 text-xs font-mono mb-3 text-center">ADVERTISEMENT</div>
+                    <div class="h-[250px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                        <div id="container-3ed2937558fa9e343798f48f38b60de3-8"></div>
+                        <script>
+                            atOptions = {
+                                'key': '3ed2937558fa9e343798f48f38b60de3',
+                                'format': 'iframe',
+                                'height': 250,
+                                'width': 300,
+                                'params': {}
+                            };
+                        </script>
+                        <script async="async" data-cfasync="false" src="https://www.highrevenueformat.com/3ed2937558fa9e343798f48f38b60de3/invoke.js"></script>
+                    </div>
+                </div>
+
+                <!-- Ad 12 -->
+                <div class="glass-panel p-5 rounded-2xl border border-coco-border">
+                    <div class="text-gray-400 text-xs font-mono mb-3 text-center">ADVERTISEMENT</div>
+                    <div class="h-[250px] bg-coco-dark/50 rounded-xl border border-coco-border/30 overflow-hidden">
+                        <div id="container-3ed2937558fa9e343798f48f38b60de3-9"></div>
+                        <script>
+                            atOptions = {
+                                'key': '3ed2937558fa9e343798f48f38b60de3',
+                                'format': 'iframe',
+                                'height': 250,
+                                'width': 300,
+                                'params': {}
+                            };
+                        </script>
+                        <script async="async" data-cfasync="false" src="https://www.highrevenueformat.com/3ed2937558fa9e343798f48f38b60de3/invoke.js"></script>
                     </div>
                 </div>
             </div>
@@ -2154,10 +2256,43 @@
             }
         }
 
-        window.addEventListener('DOMContentLoaded', () => {
-            fetchServerStatus();
-            toggleAds();
-        });
+        window.addEventListener('DOMContentLoaded', fetchServerStatus);
+
+        function toggleAds() {
+            const adToggle = document.getElementById('ad-toggle');
+            const headerAd = document.getElementById('header-ad');
+            const sideAdLeft = document.getElementById('side-ad-left');
+            const sideAdRight = document.getElementById('side-ad-right');
+            const adGrid = document.getElementById('ad-grid');
+
+            if (adToggle.checked) {
+                headerAd.classList.remove('ad-hidden');
+                headerAd.classList.remove('hidden');
+                headerAd.classList.add('md:block');
+                sideAdLeft.classList.remove('ad-hidden');
+                sideAdLeft.classList.remove('hidden');
+                sideAdLeft.classList.add('lg:block');
+                sideAdRight.classList.remove('ad-hidden');
+                sideAdRight.classList.remove('hidden');
+                sideAdRight.classList.add('lg:block');
+                adGrid.classList.remove('ad-hidden');
+                adGrid.classList.remove('hidden');
+                console.log('Ads enabled');
+            } else {
+                headerAd.classList.add('ad-hidden');
+                headerAd.classList.add('hidden');
+                headerAd.classList.remove('md:block');
+                sideAdLeft.classList.add('ad-hidden');
+                sideAdLeft.classList.add('hidden');
+                sideAdLeft.classList.remove('lg:block');
+                sideAdRight.classList.add('ad-hidden');
+                sideAdRight.classList.add('hidden');
+                sideAdRight.classList.remove('lg:block');
+                adGrid.classList.add('ad-hidden');
+                adGrid.classList.add('hidden');
+                console.log('Ads disabled');
+            }
+        }
 
         function playClickSound() {
             try {
@@ -2222,31 +2357,6 @@
                     mobileMenu.classList.add('translate-x-full');
                 });
             });
-        }
-
-        function toggleAds() {
-            const adToggle = document.getElementById('ad-toggle');
-            const adContainer = document.getElementById('ad-container');
-            const headerAd = document.getElementById('header-ad');
-            const sideAdLeft = document.getElementById('side-ad-left');
-            const sideAdRight = document.getElementById('side-ad-right');
-            const body = document.body;
-
-            if (adToggle.checked) {
-                adContainer.classList.remove('hidden');
-                headerAd.classList.remove('hidden');
-                sideAdLeft.classList.remove('hidden');
-                sideAdRight.classList.remove('hidden');
-                body.classList.add('ads-enabled');
-                console.log('Adstera ads enabled');
-            } else {
-                adContainer.classList.add('hidden');
-                headerAd.classList.add('hidden');
-                sideAdLeft.classList.add('hidden');
-                sideAdRight.classList.add('hidden');
-                body.classList.remove('ads-enabled');
-                console.log('Adstera ads disabled');
-            }
         }
 
         // Particle Canvas Background
