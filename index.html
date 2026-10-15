@@ -7,10 +7,10 @@
     <link rel="icon" href="icoicon.png" type="image/png">
 
     <!-- Primary SEO Meta Tags -->
-    <title>CoconutSMP Store & Server IP | Free Cross-Play Minecraft Server with Custom Ranks, Crate Keys & Economy</title>
-    <meta name="title" content="CoconutSMP Store & Server IP | Free Cross-Play Minecraft Server with Custom Ranks, Crate Keys & Economy">
-    <meta name="description" content="CoconutSMP - The #1 Free Cross-Play Minecraft Server with FREE Rewards! Get custom ranks (Mod, Supporter, Content Creator, Custom Teams), crate keys (Kill, Vote, Death, Helper crates), economy items, and server features at 100% NO COST. Supports Java, Bedrock, Xbox, PlayStation, Nintendo Switch, Mobile, VR, Web Browsers, iOS/iPA, and Cracked clients. play.coconutsmp.qzz.io for best ping (0-50ms), mc.coconutsmp.qzz.io for cracked/universal access. FREE rewards available in-game.">
-    <meta name="keywords" content="CoconutSMP store, CoconutSMP shop, CoconutSMP custom ranks, CoconutSMP crate keys, CoconutSMP economy, free Minecraft store, free Minecraft ranks, Coconut SMP store, CoconutSMP server, CoconutSMP Minecraft, free Minecraft server, 100% free SMP, no cost Minecraft server, play.coconutsmp.qzz.io, mc.coconutsmp.qzz.io, laurel-recite.tun.ply.gg, CoconutSMP IP, best free SMP server, crossplay Minecraft server, Java Minecraft server, Bedrock Minecraft server, cracked Minecraft server, TLauncher server, SKLauncher server, free Minecraft survival server, CoconutSMP official, CoconutSMP reddit, CoconutSMP wiki, Officialcoconutsmp, coconutsmp fandom, CoconutSMP YouTubers, ProcatMC, Ray8921, CoconutSMP free items, CoconutSMP free ranks, CoconutSMP crate keys free">
+    <title>CoconutSMP Official Website | Cross-Play Minecraft Server IP</title>
+    <meta name="title" content="CoconutSMP Official Website | Cross-Play Minecraft Server IP">
+    <meta name="description" content="Free cross-play Minecraft server with Java, Bedrock & cracked support. Custom ranks, crate keys, economy - 100% free to play!">
+    <meta name="keywords" content="CoconutSMP, free Minecraft server, crossplay, Java, Bedrock, cracked, play.coconutsmp.qzz.io">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://coconutsmp.qzz.io/">
     <meta name="theme-color" content="#fe8001">
@@ -385,16 +385,11 @@
     <!-- Robots.txt Reference -->
     <link rel="robots" href="https://coconutsmp.qzz.io/robots.txt">
 
-    <!-- Preconnect to External Resources -->
+    <!-- Preconnect to External Resources (max 4) -->
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://mcstatus.io">
-    <link rel="preconnect" href="https://map.coconutsmp.qzz.io">
-    <link rel="preconnect" href="https://download.coconutsmp.qzz.io">
-    <link rel="preconnect" href="https://discord.gg">
-    <link rel="preconnect" href="https://www.highrevenueformat.com">
 
     <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="https://mcstatus.io">
@@ -442,9 +437,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- WidgetBot Script -->
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'JetBrains Mono';
+            font-display: swap;
+        }
+    </style>
+
+    <!-- WidgetBot Script (deferred for performance) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 
     <style>
         .bg-checkered {
@@ -496,6 +504,7 @@
             object-fit: contain;
             transition: transform 0.3s ease;
             mix-blend-mode: normal;
+            image-rendering: pixelated;
         }
 
         .feature-container {
@@ -508,6 +517,14 @@
             position: relative;
             overflow: hidden;
             border-radius: 12px;
+        }
+
+        /* Fix stretched images - use actual dimensions */
+        .feature-image {
+            max-width: 64px;
+            max-height: 64px;
+            width: auto;
+            height: auto;
         }
 
         /* Easter gif overlay */
@@ -1067,6 +1084,15 @@
                         <h3 class="text-lg font-bold text-white group-hover:text-coco-accent transition-colors mb-2">Cross-Play</h3>
                         <p class="text-gray-400 text-sm">Play with friends on Java, Bedrock, Xbox, PlayStation, Nintendo Switch, Mobile, VR, and more!</p>
                     </div>
+
+                    <!-- Voting Rewards -->
+                    <div class="glass-panel p-6 rounded-3xl border border-coco-border hover:border-coco-accent transition-all group">
+                        <div class="feature-container w-16 h-16 rounded-2xl bg-purple-500/20 border border-purple-500/40 group-hover:scale-110 transition-all mb-4 shadow-lg overflow-hidden">
+                            <i class="fa-solid fa-check-to-slot text-3xl text-purple-400 pixelated"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-coco-accent transition-colors mb-2">Voting Rewards</h3>
+                        <p class="text-gray-400 text-sm">Vote for the server and get free loot up to 10k dollars and lots of rare items! Vote daily for maximum impact.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1189,7 +1215,7 @@
 
                     <!-- Title Logo Image -->
                     <div class="flex justify-center mb-6">
-                        <img src="https://github.com/procatsrandomsources/Coconut/blob/main/minecraft_title.png?raw=true" alt="CoconutSMP Minecraft Title Banner with Custom Launcher Downloads" class="h-20 sm:h-28 md:h-32 object-contain drop-shadow-[0_10px_25px_rgba(254,128,1,0.45)] hover:scale-105 transition-transform duration-300">
+                        <img src="https://github.com/procatsrandomsources/Coconut/blob/main/minecraft_title.png?raw=true" alt="CoconutSMP Minecraft Title Banner with Custom Launcher Downloads" width="1007" height="204" class="h-20 sm:h-28 md:h-32 w-auto object-contain drop-shadow-[0_10px_25px_rgba(254,128,1,0.45)] hover:scale-105 transition-transform duration-300">
                     </div>
 
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">THE COCONUTSMP MC LAUNCHERS</h2>
@@ -2640,22 +2666,22 @@
 
             <!-- Social Media Links -->
             <div class="flex items-center space-x-6">
-                <a href="https://www.youtube.com/@OfficalCoconutSmp" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-red-500 hover:border-red-500/50 transition-all">
+                <a href="https://www.youtube.com/@OfficalCoconutSmp" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-red-500 hover:border-red-500/50 transition-all" aria-label="CoconutSMP YouTube Channel">
                     <i class="fa-brands fa-youtube text-lg"></i>
                 </a>
-                <a href="https://www.tiktok.com/@officalcoconutsmp" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-white hover:border-white/50 transition-all">
+                <a href="https://www.tiktok.com/@officalcoconutsmp" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-white hover:border-white/50 transition-all" aria-label="CoconutSMP TikTok">
                     <i class="fa-brands fa-tiktok text-lg"></i>
                 </a>
-                <a href="https://www.instagram.com/officialcoconutsmp/" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-pink-500 hover:border-pink-500/50 transition-all">
+                <a href="https://www.instagram.com/officialcoconutsmp/" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-pink-500 hover:border-pink-500/50 transition-all" aria-label="CoconutSMP Instagram">
                     <i class="fa-brands fa-instagram text-lg"></i>
                 </a>
-                <a href="https://www.reddit.com/r/CommunityCoconutSMP/" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-orange-500 hover:border-orange-500/50 transition-all">
+                <a href="https://www.reddit.com/r/CommunityCoconutSMP/" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-orange-500 hover:border-orange-500/50 transition-all" aria-label="CoconutSMP Reddit Community">
                     <i class="fa-brands fa-reddit text-lg"></i>
                 </a>
-                <a href="https://www.planetminecraft.com/server/coconutsmp/" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-green-500 hover:border-green-500/50 transition-all">
+                <a href="https://www.planetminecraft.com/server/coconutsmp/" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-green-500 hover:border-green-500/50 transition-all" aria-label="CoconutSMP Planet Minecraft Server Page">
                     <i class="fa-solid fa-earth-americas text-lg"></i>
                 </a>
-                <a href="https://coconutsmp.fandom.com/wiki/" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-blue-500 hover:border-blue-500/50 transition-all">
+                <a href="https://coconutsmp.fandom.com/wiki/" target="_blank" class="w-10 h-10 rounded-xl bg-coco-card border border-coco-border flex items-center justify-center text-gray-400 hover:text-blue-500 hover:border-blue-500/50 transition-all" aria-label="CoconutSMP Wiki">
                     <i class="fa-solid fa-book-open text-lg"></i>
                 </a>
             </div>
